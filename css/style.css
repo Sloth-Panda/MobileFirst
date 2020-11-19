@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0px;
+  background-color: #eee;
+  height: auto;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2{
+  font-weight: 400;
+  font-size: 1.22 rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+img{
+  display: block;
+  width: 100%;
+}
+
+main{
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+  -30px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+#landing{
+  background: #fff;
+}
+
+#landing-text{
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  flex: 0 1 40vw;
+}
+
+#landing-text h2{
+  color: #888;
+}
+
+.btn{
+  padding: 0.6rem 2rem;
+  border: 1px #ccc solid;
+  text-decoration: none;
+  margin: 2rem 0 0;
+  color: #333;
+  border-radius: 4px;
+  display: inline-block; 
+  transition: background 600ms ease-in-out;
+}
+
+.btn:hover{
+  background: #f4f4f4;
+
+}
+#landing-image{
+  background: url("https://source.unsplash.com/cwy9yVBBPxg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin: 0;
+  flex: 0 1 60vw;
+}
+
+#header{
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2{
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding: 0  1rem 0 1rem;
+}
+
+.caption{
+  padding: 1rem;
+  text-align: center;
+
+}
+
+footer{
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3{
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+/* screen sizes 600px and up*/
+
+@media (min-width: 600px){
+  #landing{
+    display: flex;
+    height: 100%;
+  }
+  #landing-text, #landing-image{
+    height: 100vh;
+  }
+}/*screen sizes 700px and up*/
+
+
+@media (min-width: 750px){
+  .btn{
+    padding: 1rem 3rem;
+  }
+}
